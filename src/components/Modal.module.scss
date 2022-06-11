@@ -1,0 +1,67 @@
+.Modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transform: scale(0);
+  opacity: 0;
+  transition: 0.3s;
+  pointer-events: none;
+  &__Block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    width: 800px;
+    height: 400px;
+    background: #fff;
+    border-radius: 10%;
+    gap: 100px;
+    &__Text {
+      &__title {
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 52px;
+        line-height: 61px;
+        color: #000000;
+        margin-bottom: 15px;
+      }
+      &__stat {
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 59px;
+        color: #000000;
+      }
+      &__stat1 {
+        display: flex;
+
+        flex-wrap: wrap;
+
+        div {
+          flex: 1 1 200px;
+          font-family: "Roboto", sans-serif;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+          color: #000000;
+        }
+      }
+    }
+  }
+}
+
+.active {
+  transform: scale(1);
+  opacity: 1;
+  pointer-events: all;
+  transition: 0.3s;
+}
