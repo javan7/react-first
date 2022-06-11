@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button,
+input {
+  border: none;
+}
+
+.App {
+  width: 1440px;
+  height: 100vh;
+}
+
+.Header {
+  width: 100vw;
+  height: 134px;
+  background: #806bff;
+  padding: 16px 0 15px 60px;
+}
+
+.Search {
+  display: flex;
+  width: 1199px;
+  height: 89px;
+  margin: 57px 0 57px 60px;
+  background: #e6e6e6;
+  border-radius: 20px;
+  overflow: hidden;
+
+  &__Inp {
+    height: 100%;
+    flex: 1 1 85%;
+    outline: none;
+    background: transparent;
+    border-right: 1px solid rgba(0, 0, 0, 0.39);
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: rgba(0, 0, 0, 0.39);
+    padding-left: 61px;
+  }
+
+  &__Btn {
+    height: 100%;
+    flex: 1 1 15%;
+    background: transparent;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: rgba(0, 0, 0, 0.8);
+    transition: 0.2s;
+    &:hover {
+      background: rgba(0, 0, 0, 0.39);
+      color: #e6e6e6;
+    }
+  }
+}
+
+::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: rgba(0, 0, 0, 0.39);
+}
+
+.Cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 60px;
+}
